@@ -13,7 +13,7 @@ public class Main {
     public static void main(String[] args) {
 
         // Tasks:
-        System.out.println("/ Tasks 1: ");
+        System.out.println("Task_1: ");
         /* 1. Write a program that declares an integer a variable x,
             assigns the value 2 to it, and prints out the binary string
             version of the number ( Integer.toBinaryString(x) ). Now, use
@@ -34,7 +34,7 @@ public class Main {
         System.out.println();
         System.out.println("The left shift operator (<<) to shift by 1:");
         x = x << 1;
-        System.out.println("A value of variable x: " + x);  // multiplication by 2
+        System.out.println("A value of variable x: " + x);  // multiplication x by 2
         System.out.println("The binary string version of x: " + Integer.toBinaryString(x));
 
         System.out.println();
@@ -99,7 +99,8 @@ public class Main {
              - b. 1555
              - c. 32456
          */
-        System.out.println("/ Tasks 2: ");
+
+        System.out.println("Task_2: ");
 
         // the right shift operator (>>) to shift by 2 and assign the result to x / by 2
 
@@ -118,27 +119,83 @@ public class Main {
         float x11= x1;
         System.out.println("A decimal value of variable a: " + x11);
 
+        System.out.println("--------------a = 225------------------");
+        int a_1 = 225;
+        System.out.println("A value of variable a_1: " + a_1);
+        System.out.println("The binary string version of a_1: " + Integer.toBinaryString(a_1));
+        // the right shift operator (>>) to shift by 1:
+        System.out.println();
+        System.out.println("The rigth shift operator (>>) to shift by 2:");
+        a_1 = a_1 >> 2;
+        System.out.println("A value of variable a_1: " + a_1);  // multiplication by 2
+        System.out.println("The binary string version of a_1: " + Integer.toBinaryString(a_1));
+
+        System.out.println();
+        float a_11= a_1;
+        System.out.println("A decimal value of variable a: " + a_1);
+
         /* 3. Write a program that declares three int variables: x, y, and z.
             Assign 7 to x and 17 to y. Write a comment that indicates what you predict
-            will be the result of the bitwise and operation on x and y. Now use the bitwise
+            will be the result of the bitwise " & " operation on x and y. Now use the bitwise
             AND (&) operator to derive the decimal and binary values, and assign the result
             to z.
          */
+        System.out.println("Task_3: ");
 
-        /* 4. Now, with the preceding values, use the bitwise and operator to calculate
+        int x_3 = 7;
+        int y_3 = 17;
+
+        // Predict of x & y:
+        System.out.println("7 in binary: " + Integer.toBinaryString(x_3));
+        System.out.println("17 in binary: " + Integer.toBinaryString(y_3));
+
+        // Result of x & y: 0001 (decimal 1)
+        int z = x_3 & y_3;
+        System.out.println("Bitwise AND (x & y) in binary: " + Integer.toBinaryString(z));
+        System.out.println("Bitwise AND (x & y): " + z + "decimal");
+
+
+        /* 4. Now, with the preceding values, use the bitwise "| " operator to calculate
             the “or” value between x and y. As before, write a comment that indicates
             what you predict the values to be before printing them out.
          */
+        System.out.println();
+        System.out.println("Task_4: ");
+
+        // Predict of x | y:
+        System.out.println("7 in binary: " + Integer.toBinaryString(x_3));
+        System.out.println("17 in binary: " + Integer.toBinaryString(y_3));
+        // Result of x | y: 1111 (decimal 15)
+        int z_4 = x_3 | y_3;
+        System.out.println("Bitwise OR (x | y) in binary: " + Integer.toBinaryString(z_4));
+        System.out.println("Bitwise OR (x | y): " + z_4 + " decimal");
+
 
         /* 5. Write a program that declares an integer variable, assigns a number,
             and uses a postfix increment operator to increase the value.
             Print the value before and after the increment operator.
          */
+        System.out.println();
+        System.out.println("Task_5: ");
+
+        int var = 127;
+        System.out.println("The value of <int> variable: " + var);
+
+        var++;
+        System.out.println("The value after postfix use of \"++\": " + var);
 
         /* 6. Write a program that declares an integer variable, assigns a number,
-            and uses a postfix increment operator to increase the value. Print the value
+            and uses a prefix increment operator to increase the value. Print the value
             before and after the increment operator.
          */
+        System.out.println();
+        System.out.println("Task_6: ");
+
+        int var1 = 778;
+        System.out.println("The value of <int> variable: " + var1);
+
+        ++var1;
+        System.out.println("The value after prefix use of \"++\": " + var1);
 
         /* 7. Write a program that declares two integer variables: x, and y, and
             then assigns 5 to x and 8 to y. Create another variable sum and assign
@@ -148,9 +205,17 @@ public class Main {
             configuration incremented x, and then calculated the sum, while the second
             configuration calculated the sum, and then incremented x.
          */
+        System.out.println();
+        System.out.println("Task_7: ");
 
+        int w = 5;
+        int v = 8;
+        int sum = ++w + v; // Pre-increment w
+        System.out.println("Sum of 2 variables when 1st was ++w (pre-increment): " + sum);
 
-
+        int w1 = 5;
+        int sum1 = w1++ + v; // Post-increment w
+        System.out.println("Sum of 2 variables when 1st was w++ (post-increment): " + sum1);
 
     }
 }
