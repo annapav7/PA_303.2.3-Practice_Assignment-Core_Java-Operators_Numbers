@@ -4,6 +4,7 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 
 /*
+Instructor:
 Assignment Name: PA 303.2.3 - Practice Assignment - Core Java - Operators and Numbers
 Author: Pavlenko Anna
 Data: March_15_2024
@@ -33,8 +34,9 @@ public class Main {
         // the left shift operator (<<) to shift by 1:
         System.out.println();
         System.out.println("The left shift operator (<<) to shift by 1:");
+        // multiplication x by 2
         x = x << 1;
-        System.out.println("A value of variable x: " + x);  // multiplication x by 2
+        System.out.println("A value of variable x: " + x);
         System.out.println("The binary string version of x: " + Integer.toBinaryString(x));
 
         System.out.println();
@@ -54,8 +56,6 @@ public class Main {
         System.out.println("The binary string version of a: " + Integer.toBinaryString(a));
 
         System.out.println();
-        float a1= a;
-        System.out.println("A decimal value of variable a: " + a1);
 
         System.out.println("--------------b = 17------------------");
         int b = 17;
@@ -69,9 +69,6 @@ public class Main {
         System.out.println("The binary string version of b: " + Integer.toBinaryString(b));
 
         System.out.println();
-        float b1= b;
-        System.out.println("A decimal value of variable b: " + b1);
-
 
         System.out.println("--------------c = 88------------------");
         int c = 88;
@@ -85,13 +82,11 @@ public class Main {
         System.out.println("The binary string version of c: " + Integer.toBinaryString(c));
 
         System.out.println();
-        float c1= c;
-        System.out.println("A decimal value of variable a: " + c1);
 
 
         /* 2. Write a program that declares a variable x, and assigns 150 to it,
-        and prints out the binary string version of the number. Now use the right s
-        hift operator (>>) to shift by 2 and assign the result to x. Write a comment
+        and prints out the binary string version of the number. Now use the right
+        shift operator (>>) to shift by 2 and assign the result to x. Write a comment
         indicating what you anticipate the decimal and binary values to be.
         Now print the value of x and the binary string.
         Perform the preceding exercise with the following values:
@@ -116,8 +111,6 @@ public class Main {
         System.out.println("The binary string version of x1: " + Integer.toBinaryString(x1));
 
         System.out.println();
-        float x11= x1;
-        System.out.println("A decimal value of variable a: " + x11);
 
         System.out.println("--------------a = 225------------------");
         int a_1 = 225;
@@ -131,8 +124,34 @@ public class Main {
         System.out.println("The binary string version of a_1: " + Integer.toBinaryString(a_1));
 
         System.out.println();
-        float a_11= a_1;
-        System.out.println("A decimal value of variable a: " + a_1);
+
+
+        System.out.println("--------------b = 1555------------------");
+        int b_1 = 1555;
+        System.out.println("A value of variable b_1: " + b_1);
+        System.out.println("The binary string version of b_1: " + Integer.toBinaryString(b_1));
+        // the right shift operator (>>) to shift by 1:
+        System.out.println();
+        System.out.println("The rigth shift operator (>>) to shift by 2:");
+        b_1 = b_1 >> 2;
+        System.out.println("A value of variable b_1: " + b_1);  // multiplication by 2
+        System.out.println("The binary string version of b_1: " + Integer.toBinaryString(b_1));
+
+        System.out.println();
+
+
+        System.out.println("--------------c = 32456------------------");
+        int c_1 = 1555;
+        System.out.println("A value of variable c_1: " + c_1);
+        System.out.println("The binary string version of c_1: " + Integer.toBinaryString(c_1));
+        // the right shift operator (>>) to shift by 1:
+        System.out.println();
+        System.out.println("The rigth shift operator (>>) to shift by 2:");
+        c_1 = c_1 >> 2;
+        System.out.println("A value of variable c_1: " + c_1);  // multiplication by 2
+        System.out.println("The binary string version of c_1: " + Integer.toBinaryString(c_1));
+
+        System.out.println();
 
         /* 3. Write a program that declares three int variables: x, y, and z.
             Assign 7 to x and 17 to y. Write a comment that indicates what you predict
@@ -152,7 +171,7 @@ public class Main {
         // Result of x & y: 0001 (decimal 1)
         int z = x_3 & y_3;
         System.out.println("Bitwise AND (x & y) in binary: " + Integer.toBinaryString(z));
-        System.out.println("Bitwise AND (x & y): " + z + "decimal");
+        System.out.println("Bitwise AND (x & y): " + z + " decimal");
 
 
         /* 4. Now, with the preceding values, use the bitwise "| " operator to calculate
