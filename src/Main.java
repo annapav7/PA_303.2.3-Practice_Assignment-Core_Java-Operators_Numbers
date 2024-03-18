@@ -30,19 +30,24 @@ public class Main {
         System.out.println("--------------x = 2------------------");
         int x = 2;
         System.out.println("A value of variable x: " + x);
+
+        //The predicted decimal value:
+        // The predicted binary String:
         System.out.println("The binary string version of x: " + Integer.toBinaryString(x));
         // the left shift operator (<<) to shift by 1:
         System.out.println();
         System.out.println("The left shift operator (<<) to shift by 1:");
         // multiplication x by 2
         x = x << 1;
+        //The predicted decimal value:
+        // The predicted binary String:
         System.out.println("A value of variable x: " + x);
         System.out.println("The binary string version of x: " + Integer.toBinaryString(x));
 
         System.out.println();
         float y = x;
         System.out.println("A decimal value of variable y: " + y);
-        //System.out.println("The binary string version of decimal x -> y: " + Integer.toBinaryString(y));
+//        System.out.println("The binary string version of decimal x -> y: " + Integer.toBinaryString(y));
 
         System.out.println("--------------a = 9------------------");
         int a = 9;
@@ -141,7 +146,7 @@ public class Main {
 
 
         System.out.println("--------------c = 32456------------------");
-        int c_1 = 1555;
+        int c_1 = 32456;
         System.out.println("A value of variable c_1: " + c_1);
         System.out.println("The binary string version of c_1: " + Integer.toBinaryString(c_1));
         // the right shift operator (>>) to shift by 1:
@@ -167,8 +172,11 @@ public class Main {
         // Predict of x & y:
         System.out.println("7 in binary: " + Integer.toBinaryString(x_3));
         System.out.println("17 in binary: " + Integer.toBinaryString(y_3));
-
+        // Predicting the result of x & y (bitwise AND)
+        // 7 in binary: 0111
+        // 17 in binary: 10001
         // Result of x & y: 0001 (decimal 1)
+
         int z = x_3 & y_3;
         System.out.println("Bitwise AND (x & y) in binary: " + Integer.toBinaryString(z));
         System.out.println("Bitwise AND (x & y): " + z + " decimal");
@@ -184,7 +192,9 @@ public class Main {
         // Predict of x | y:
         System.out.println("7 in binary: " + Integer.toBinaryString(x_3));
         System.out.println("17 in binary: " + Integer.toBinaryString(y_3));
-        // Result of x | y: 1111 (decimal 15)
+        // 7 in binary: 0111
+        // 17 in binary: 10001
+        // Result of x | y: 1111 (decimal 23)
         int z_4 = x_3 | y_3;
         System.out.println("Bitwise OR (x | y) in binary: " + Integer.toBinaryString(z_4));
         System.out.println("Bitwise OR (x | y): " + z_4 + " decimal");
