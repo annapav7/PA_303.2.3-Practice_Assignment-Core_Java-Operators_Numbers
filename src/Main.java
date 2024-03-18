@@ -4,7 +4,7 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 
 /*
-Instructor:
+Instructor: Raheem Abolfathzadeh
 Assignment Name: PA 303.2.3 - Practice Assignment - Core Java - Operators and Numbers
 Author: Pavlenko Anna
 Data: March_15_2024
